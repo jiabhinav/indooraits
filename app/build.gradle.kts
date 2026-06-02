@@ -2,6 +2,7 @@ plugins {
     //alias(libs.plugins.android.application)
     id("com.android.library")
     id("maven-publish")
+    //id ("org.jetbrains.kotlin.android")
 
 }
 /*s.abhinav*/
@@ -29,7 +30,7 @@ android {
 
     defaultConfig {
        // applicationId = "com.app.indooraits"
-        //minSdk = 24
+        minSdk = 24
         //targetSdk = 36
         //versionCode = 1
         //versionName = "1.0"
