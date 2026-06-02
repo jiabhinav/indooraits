@@ -28,12 +28,12 @@ android {
 
     defaultConfig {
        // applicationId = "com.app.indooraits"
-        minSdk = 24
+        //minSdk = 24
         //targetSdk = 36
         //versionCode = 1
         //versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+       // testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resValue("string", "indooratlas_api_key", apiKey)
         resValue("string", "indooratlas_api_secret", apiSecret)
         resValue("string", "background_report_endpoint", backgroundReportEndPoint)
@@ -80,8 +80,8 @@ afterEvaluate {
         publications {
             create<MavenPublication>("release") {
                 groupId = "com.app"
-                artifactId = "indooratlash"
-                version = "1.0.0"
+                artifactId = "indooraits"
+                version = "1.0.1"
 
                 if (components.findByName("release") != null) {
                     from(components["release"])
