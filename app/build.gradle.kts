@@ -2,6 +2,7 @@ plugins {
     //alias(libs.plugins.android.application)
     id("com.android.library")
     id("maven-publish")
+
 }
 /*s.abhinav*/
 /*val apiKey: String = project.findProperty("indoorAtlasApiKey") as String?

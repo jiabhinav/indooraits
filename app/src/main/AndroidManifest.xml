@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
-    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
@@ -41,7 +40,7 @@
            android:screenOrientation="portrait">
        </activity>-->
 
-        <activity
+      <!--  <activity
             android:name=".imageview.ImageViewActivity"
             android:label=""
             android:exported="true">
@@ -50,19 +49,15 @@
 
                    <category android:name="android.intent.category.LAUNCHER" />
                </intent-filter>
-        </activity>
+        </activity>-->
+
+        <activity
+            android:name=".imageview.ImageViewActivity"
+            android:exported="true" />
 
         <activity
             android:name=".wayfinding.WayfindingOverlayActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
-    <!--   <activity
-            android:name=".imageview.ImageViewActivity"
-            android:label=""
-            android:screenOrientation="portrait" >
-
-       </activity>-->
+            android:exported="false" />
 
         <!-- s.abhinav-->
         <meta-data
