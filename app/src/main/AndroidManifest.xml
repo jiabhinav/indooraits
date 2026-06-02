@@ -35,8 +35,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Indooraits"-->>
 
-
-
         <!--  <activity
            android:name=".wayfinding.WayfindingOverlayActivity"
            android:theme="@style/Theme."
@@ -54,6 +52,11 @@
                </intent-filter>
         </activity>
 
+        <activity
+            android:name=".wayfinding.WayfindingOverlayActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
     <!--   <activity
             android:name=".imageview.ImageViewActivity"
             android:label=""
@@ -62,22 +65,22 @@
        </activity>-->
 
         <!-- s.abhinav-->
-        <!--<meta-data
-            android:name="com.indooratlas.android.sdk.API_KEY"
-            android:value="0060e83b-5b53-4c80-bd53-6d4b10629cc0"/>-->
-
         <meta-data
             android:name="com.indooratlas.android.sdk.API_KEY"
-            android:value="e27f6c17-2b41-4cd0-ba1f-bdabadb0950f"/>
+            android:value="0060e83b-5b53-4c80-bd53-6d4b10629cc0"/>
+
+       <!-- <meta-data
+            android:name="com.indooratlas.android.sdk.API_KEY"
+            android:value="e27f6c17-2b41-4cd0-ba1f-bdabadb0950f"/>-->
 
         <!--s.abhinav-->
-        <!-- <meta-data
+         <meta-data
              android:name="com.indooratlas.android.sdk.API_SECRET"
-             android:value="xFlAzInbxXmUsESTknIA0WdU7RfXwdsjD5rYHNd3sGOK2dOBS3nHuC8Zmn6ZXNFQzU/vVRnOiplhRUMaPvddXuZAgth4OBAX9IMp5lLAJ74f0ly2mWxJFqUrb2161g=="/>-->
+             android:value="xFlAzInbxXmUsESTknIA0WdU7RfXwdsjD5rYHNd3sGOK2dOBS3nHuC8Zmn6ZXNFQzU/vVRnOiplhRUMaPvddXuZAgth4OBAX9IMp5lLAJ74f0ly2mWxJFqUrb2161g=="/>
 
-        <meta-data
+       <!-- <meta-data
             android:name="com.indooratlas.android.sdk.API_SECRET"
-            android:value="70WbWZwTfBKtbf6UyS0b4Z+ITFV4tc5SCSXz1o9+HKw0n0B5vcV7bhLRZcszdd/CbBlH4oCXVNf4NslE9jMW/mzsl4r/LHkBjA6Vk7hEtsPvlg0Tp/kVAouN0/fRlA=="/>
+            android:value="70WbWZwTfBKtbf6UyS0b4Z+ITFV4tc5SCSXz1o9+HKw0n0B5vcV7bhLRZcszdd/CbBlH4oCXVNf4NslE9jMW/mzsl4r/LHkBjA6Vk7hEtsPvlg0Tp/kVAouN0/fRlA=="/>-->
 
 
         <meta-data
