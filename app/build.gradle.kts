@@ -82,7 +82,7 @@ afterEvaluate {
             create<MavenPublication>("release") {
                 groupId = "com.app"
                 artifactId = "indooraits"
-                version = "1.0.1"
+                version = "1.0.3"
 
                 if (components.findByName("release") != null) {
                     from(components["release"])
