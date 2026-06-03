@@ -1,9 +1,8 @@
 plugins {
-    //alias(libs.plugins.android.application)
-    id("com.android.library")
-    id("maven-publish")
+    alias(libs.plugins.android.application)
+    /*id("com.android.library")
+    id("maven-publish")*/
     //id ("org.jetbrains.kotlin.android")
-
 }
 /*s.abhinav*/
 /*val apiKey: String = project.findProperty("indoorAtlasApiKey") as String?
@@ -21,7 +20,7 @@ val apiSecret: String = project.findProperty("indoorAtlasApiSecret") as String?
 val backgroundReportEndPoint: String = project.findProperty("backgroundReportEndPoint") as String?
     ?: ""
 android {
-   // namespace = "com.app.indooraits"
+    namespace = "com.app.indooraits"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -29,7 +28,7 @@ android {
     }
 
     defaultConfig {
-       // applicationId = "com.app.indooraits"
+        applicationId = "com.app.indooraits"
         minSdk = 24
         //targetSdk = 36
         //versionCode = 1
@@ -60,6 +59,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":indoor"))
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.androidx.constraintlayout)

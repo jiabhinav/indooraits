@@ -25,6 +25,7 @@ import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentActivity
+import com.app.indoor.imageview.Smooth
 import com.app.indooraits.R
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -83,10 +84,13 @@ class WayfindingOverlayActivity : FragmentActivity(), OnMapClickListener, OnMapR
     private lateinit var etSearch: EditText
     private lateinit var listSearch: ListView
 
+
     private val allPois: MutableList<IAPOI> = ArrayList()
     private val filteredPois: MutableList<IAPOI> = ArrayList()
 
     private lateinit var adapter: ArrayAdapter<String>
+
+
     private val poiMarkerMap = HashMap<String, Marker>()
     var floorConfidence: Float?=null
     var mCurrentFloorLevel: Int?=null
@@ -102,6 +106,8 @@ class WayfindingOverlayActivity : FragmentActivity(), OnMapClickListener, OnMapR
 
         // instantiate IALocationManager
         mIALocationManager = IALocationManager.create(this)
+
+
 
 
         //====SEarch Feature============

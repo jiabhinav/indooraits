@@ -71,6 +71,7 @@ class ImageViewActivity : FragmentActivity() {
     private lateinit var adapter: ArrayAdapter<String>
 
 
+
     private val mLocationListener: IALocationListener = object : IALocationListenerSupport() {
         override fun onLocationChanged(location: IALocation) {
             Log.d(TAG, "location is: " + location.getLatitude() + "," + location.getLongitude())
