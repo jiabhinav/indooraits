@@ -21,7 +21,7 @@ val apiSecret: String = project.findProperty("indoorAtlasApiSecret") as String?
 val backgroundReportEndPoint: String = project.findProperty("backgroundReportEndPoint") as String?
     ?: ""
 android {
-    namespace = "com.app.indooraits"
+   // namespace = "com.app.indooraits"
     compileSdk {
         version = release(36) {
             minorApiLevel = 1
@@ -34,7 +34,6 @@ android {
         //targetSdk = 36
         //versionCode = 1
         //versionName = "1.0"
-
        // testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         resValue("string", "indooratlas_api_key", apiKey)
         resValue("string", "indooratlas_api_secret", apiSecret)
