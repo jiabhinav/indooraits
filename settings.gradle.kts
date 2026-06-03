@@ -30,4 +30,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "indooraits"
 include(":app")
- 
+include(":indoor")
